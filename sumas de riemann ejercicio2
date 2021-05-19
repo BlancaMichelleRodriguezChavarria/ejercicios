@@ -1,0 +1,33 @@
+%materia: calculo integral
+%alumna:Blanca Michelle Rodriguez Chavarria
+%correo electronico: romichelle2019@gmail.com
+%grupo:3201
+clear
+%sumas de riemann para calcular la suma superior f(x)=x^2-1, [1,4]
+%declaracion de rango
+a=1;
+b=4;
+
+num_rec=200;
+%pasos funcion
+f = inline ("x^2-1");
+%calculo del incremento de x
+h=(b-a)/num_rec;
+%m+1 puntos, m intervalos
+x=a:h:b;
+int=0;
+%para el intervalo
+for i=1:num_rec;
+    %extremos x(i), x(i+1)
+    xm=(x(i)+ x (i+1))/2; 
+    int=int+f(xm)*h;
+  end
+fprintf("Area = ")
+fprintf(" %d", int);
+x=[1:0.1:4];
+y= (x.^2) -1;
+plot(x,y)
+grid on
+hold on
+plot(x,y )
+bar(x,y, "r")
