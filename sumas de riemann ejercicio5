@@ -3,7 +3,7 @@
 %correo electronico: romichelle2019@gmail.com
 %grupo:3201
 clear
-%sumas de riemann para calcular la suma superior f(x)=(3*(x^2)), [-3,3]
+%sumas de riemann para calcular la suma inferiores f(x)=(3*(x^2)), [-3,3]
 %declaracion de rango
 a=-3;
 b=3;
