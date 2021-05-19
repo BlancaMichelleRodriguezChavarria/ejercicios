@@ -3,7 +3,7 @@
 %correo electronico: romichelle2019@gmail.com
 %grupo:3201
 clear
-%sumas de riemann para calcular la suma interiores f(x)=x^2-1, [1,4]
+%sumas de riemann para calcular la suma inferiores f(x)=x^2-1, [1,4]
 %declaracion de rango
 a=1;
 b=4;
