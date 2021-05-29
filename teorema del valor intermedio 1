@@ -4,7 +4,7 @@ clear
 %alumna:Blanca Michelle Rodríguez Chavarría
 %correo electrónico: romichelle2019@gmail.com
 %grupo:3201
-% Teorema del valor intermedio  F(x)= 3*x-2 [-2,4]   k=1
+% Teorema del valor intermedio  F(x)= 3*x-2 [-2,3]   k=1
 
 syms x;
 fx= input("INGRESE LA FUNCION :")
