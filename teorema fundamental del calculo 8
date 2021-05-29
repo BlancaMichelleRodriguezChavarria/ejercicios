@@ -1,0 +1,24 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Integrales definidas F(x)= (sqrt(a)- sqrt(x))^2
+% ejercicio 8  
+syms x;
+fx= input("INGRESE LA FUNCION :")
+funcion = inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR a: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR b: ");
+resultado= (a*b)-((4*b)(sqrt(a*b)))/3 + b^2/2 - (a*a)-((4*a)(sqrt(a*a)))/3 + a^2/2
+
+
+x = 1:0.2:0;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"c")
+title ("REPRESENTACION");   
