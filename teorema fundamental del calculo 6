@@ -1,0 +1,25 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Integrales definidas F(y)= y^2 / y+2
+% ejercicio 6 
+
+syms y;
+fy= input("INGRESE LA FUNCION :")
+funcion = inline (char(fy))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR a: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR b: ");
+resultado = ((b^2-4*b-12)/2 + 4*log(b+2)) - ((a^2-4*a-12)/2 + 4*log(a+2)) 
+
+
+x = -1:0.2:1;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"c")
+title ("REPRESENTACION");
