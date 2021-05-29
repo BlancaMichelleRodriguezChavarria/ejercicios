@@ -1,0 +1,26 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Integrales definidas F(y)= (1+ sqrt(y))/y^2
+% ejercicio 4 
+
+syms y;
+fy= input("INGRESE LA FUNCION :")
+funcion = inline (char(fy))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR a: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR b: ");
+resultado= (-1/b - 2/sqrt(b)) - (-1/a - 2/sqrt(a))
+
+
+
+x= 1:0.2:4;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"c")
+title ("REPRESENTACION");
