@@ -1,0 +1,23 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Integrales definidas F(x)= x^2-2*x+3
+% ejercicio 2  
+
+syms x;
+fx= input("INGRESE LA FUNCION :")
+funcion = inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR a: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR b: ");
+resultado = ((b^3)/3 - b^2 +3*b)-((a^3)/3 - a^2 +3*a)
+
+x = 1:0.2:2;
+f=x;
+plot(f,x);
+grid on
+hold on
+bar(f,x,"b")
+title ("REPRESENTACION");
