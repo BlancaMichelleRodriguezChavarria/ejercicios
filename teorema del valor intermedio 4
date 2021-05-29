@@ -1,0 +1,29 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Teorema del valor intermedio  F(x)= 3*x^3-2*x^2     [-2,0] c=1
+
+syms x;
+fx= input("INGRESE LA FUNCION :")
+funcion = inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR a: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR b: ");
+k= input ("INFRESE LA CONSTANTE C : ");
+resultado1= 3*b^3-2*b^2 
+resultado2= 3*a^3-2*a^2 
+total= resultado1< k < resultado1 
+
+
+fprintf( " es verdad que 1 esta entre los intervalos de -2 a 0");
+
+x = -2:0.2:0;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"b")
+title ("REPRESENTACION");
