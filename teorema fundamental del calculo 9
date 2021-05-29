@@ -1,0 +1,27 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Integrales definidas F(x)= x/sqrt (1+2*x^2)
+% ejercicio 9  
+
+syms x;
+fx= input("INGRESE LA FUNCION :")
+funcion = inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR a: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR b: ");
+resultado= (1/2)*sqrt(1+2*(b)^2)- (1/2)*sqrt(1+2*(a)^2)
+
+
+
+
+x = 0:0.2:2;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"c")
+title ("REPRESENTACION");
