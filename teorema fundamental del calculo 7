@@ -1,0 +1,25 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Integrales definidas F(t)= 2*t / 1+t^2
+% ejercicio 7 
+
+syms t;
+ft= input("INGRESE LA FUNCION :")
+funcion = inline (char(ft))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR a: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR b: ");
+resultado = log(1+b^2)-log(1+a^2)
+
+
+x = 2:0.2:3;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"c")
+title ("REPRESENTACION");
