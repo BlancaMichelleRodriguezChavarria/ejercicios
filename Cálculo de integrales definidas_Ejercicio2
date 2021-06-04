@@ -1,0 +1,40 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Integrales definidas F(x)= (57.473)*x^2
+% ejercicio 2
+
+
+syms x;
+fx= input("INGRESE LA FUNCION :")
+funcion= inline (char(fx))
+a= input("INGRESE EL VALOR DEL LIMITE INFERIOR a: "); 
+b= input("INGRESE EL VALOR DEL LIMITE SUPERIOR b: ");
+VelocidadFinal= ((57.473*b^(3)))/3 
+
+
+%Que distancia (en mts) recorrio el vehiculo mientras estaba frenando?
+%Formula para la distancia
+% d = (velocidad inicial +velocidad final)/2*tiempo
+%Velocidad inicial=58.67 pies /segundos
+%Tiempo=7 segundos
+VelocidadInicial=input("INGRESA TU VELOCIDAD INICIAL : ")
+TiempoenSegundo=input("INGRESA TU TIEMPO EN SEGUNDOS : ")
+
+
+distanciaenpies=(VelocidadInicial+VelocidadFinal)/2*(TiempoenSegundo)
+%convertir pies a metros
+%m=ft/3.28
+metros=distanciaenpies/3.28
+
+x = 0:0.2:7;
+f=x;
+plot(f,x);
+grid on
+hold on
+plot(f,x )
+bar(f,x,"b")
+title ("REPRESENTACION");
