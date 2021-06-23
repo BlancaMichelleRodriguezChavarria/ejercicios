@@ -1,0 +1,17 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+
+
+% variable simbolica 
+syms x
+% Funciones
+f=(x^2);
+g= ( 4 * x);
+%Derivada
+Suma= diff(f) + diff(g)
+Multiplicacion= diff(x^2 * 4 * x)
+Division= diff( f / g)
