@@ -1,0 +1,18 @@
+clc
+clear
+%materia: cálculo integral
+%alumna:Blanca Michelle Rodríguez Chavarría
+%correo electrónico: romichelle2019@gmail.com
+%grupo:3201
+% Ejemplo f (x) = a
+% Rango de -3..3 en i = 0.1
+ x = [-3: 1 :3]; 
+% Valor de la funcion 
+ y= x + 2 
+% Dibujar x, y
+ plot(x , y);
+% Titulo ("f (x)=((x-(+2)))
+% Etiqueta para x
+ xlabel ( "x");
+% Etiqueta para y
+ylabel ("y");
