@@ -11,7 +11,7 @@ clear
  y= x + 2 
 % Dibujar x, y
  plot(x , y);
-% Titulo ("f (x)=((x-(+2)))
+% Titulo ("f (x)= x + 2
 % Etiqueta para x
  xlabel ( "x");
 % Etiqueta para y
